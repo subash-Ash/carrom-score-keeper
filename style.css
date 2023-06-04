@@ -1,0 +1,30 @@
+#title{
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+#score_table{
+    display: none;
+}
+
+.input_name_text{
+    width: 70%;
+    border-radius: 5%;
+
+    border-width: 6%;
+}
+
+.point_name_text{
+    width: 75%;
+}
+
+.team_score{
+    text-align: center;
+}
+
+#result{
+    display: none;
+}
+
+

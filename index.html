@@ -7,10 +7,17 @@
     <title>Carrom Score Keeper</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 id="title">Carrom Score Keeper</h1>
-    <div class="main_conatiner container-fluid">
+    <h1 id="title">CARROM SCORE KEEPER</h1>
+    <div class="main_conatiner container-sm">
         <div class="card card_container">
             <img src="carrom.jpg" class="card-img-top" alt="...">
             <div class="container text-center team_score_container card-body">
@@ -30,25 +37,25 @@
                     <h1>WINNER</h1>
                     <h2 id="winner">TEAM</h2>
                 </div>
+                <div class="button_container">
+                    <input type="button" class="btn btn-warning" id="ok_button" value="Add Points">
+                    <input type="button" class="btn btn-danger" value="Reset"  onclick="history.go(0)">
+                    <input type="button" class="btn btn-dark" id="show_score_table" value="Show Table">
+                </div>
               </div>
-            </div>
-            <div>
-                <input type="button" id="ok_button" value="ok">
-                <input type="button" value="Reset">
-                <input type="button" id="show_score_table" value="Show Points">
             </div>
           </div>
           <div id="score_table">
-            <table class="table table-bordered" >
-                <tr>
-                    <td id="round_row">Rounds</td>
-                </tr>
-                <tr>
-                    <td id="teamA_point_row">Team A</td>
-                </tr>
-                <tr>
-                    <td id="teamB_point_row">Team B</td>
-                </tr>
+            <table class="table table-bordered">
+                <tbody  id="score_table_id">
+                    <tr  id="points_row">
+                        <td class="text-bg-dark p-3" id="round_row">Rounds</td>
+                        <td class="text-bg-dark p-3" id="teamA_point_row">Team A</td>
+                        <td class="text-bg-dark p-3" id="teamB_point_row">Team B</td>
+                    </tr>
+                </tbody>
+                
+
             </table>
         </div>
     </div>

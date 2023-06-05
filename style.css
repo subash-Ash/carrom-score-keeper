@@ -1,7 +1,9 @@
 #title{
     background-color: black;
-    color: white;
+    color: #d4a373;
     margin-top: 0;
+    font-family: 'Saira Stencil One', cursive;
+    text-align: center;
 }
 
 #score_table{
@@ -25,6 +27,19 @@
 
 #result{
     display: none;
+    font-family: 'Fredericka the Great', cursive;
+    color: #df2935;
 }
 
+.button_container{
+    margin-top: 3%;
+    font-family: 'Saira Stencil One', cursive;
+}
+
+@media (min-width:991.98px) {  
+    .main_conatiner{
+        width: 25% !important;
+        height:40%;
+    }
+}
 
